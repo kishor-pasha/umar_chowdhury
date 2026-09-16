@@ -111,7 +111,7 @@ nav {
 
 .btn:hover,
 .current:hover {
-  font-size: 21px;
+  font-size: 22px;
   border-radius: 22px;
   border-bottom: 2.3px solid var(--darker);
   border-top: 2.3px solid var(--pink);
@@ -154,6 +154,7 @@ nav {
 .greet {
   color: var(--pink);
   font-size: 70px;
+  font-weight: 800;
 }
 
 .info {
@@ -175,16 +176,16 @@ nav {
   cursor: pointer;
   margin: 6px;
   padding: 0;
-  font-family: "Jost";
-  font-weight: 500;
   height: 50px;
   width: 150px;
   font-size: 20px;
   background-color: var(--pink);
-  border: none;
+  border: 2.3px solid var(--pink);
   border-radius: 25px;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
-  transition: all 0.5s ease-in-out;
+  font-family: "Jost";
+  font-weight: 500;
+  transition: all 0.5s ease;
 }
 
 .btnx:hover {
@@ -194,19 +195,22 @@ nav {
 }
 
 #sect {
-  padding: 20px;
+  align-items: center;
+  padding: 0px 20px;
   display: flex;
   position: relative;
   width: 100%;
-  height: auto;
   flex-direction: column;
 }
 
-.info {
+.short-info {
+  margin-top: 30px;
+  align-self: flex-start;
   position: relative;
 }
 
 .information {
+  font-size: 40px;
   color: var(--darker);
   position: relative;
   display: flex;
@@ -231,15 +235,51 @@ nav {
   max-height: 500px;
 }
 
+.project-text {
+  color: var(--pink);
+}
+
+.project-info {
+  font-size: 18px;
+  color: var(--white);
+}
+
+.read-more {
+  margin-top: 10px;
+  width: 200px;
+  height: 30px;
+  color: var(--darker);
+  background-color: var(--pink);
+  border-radius: 18px;
+  border: 2px solid var(--pink);
+  transition: all 0.5s ease;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  font-family: "Jost";
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.project1 .read-more:hover {
+  background-color: transparent;
+  color: var(--pink);
+  border: 2.3px solid var(--darker);
+}
+
 .project1 {
-  margin-top: 40px;
+  align-self: flex-end;
+  margin-top: 30px;
   align-items: center;
   background-color: var(--dark);
   display: flex;
   width: 80%;
   height: 300px;
-  border-radius: 30px;
+  border-radius: 45px;
   position: relative;
+}
+
+.project1 .project-text {
+  color: var(--darker);
 }
 
 .project-img {
@@ -247,21 +287,33 @@ nav {
   width: 250px;
   margin: 0px 23px;
   scale: 100%;
+  border: 2px solid var(--pink);
   border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 20px;
+  border-bottom-right-radius: 30px;
   border-top-left-radius: 10px;
-  border-top-right-radius: 20px;
+  border-top-right-radius: 30px;
+}
+
+.project1 .project-img {
+  border: 2px solid var(--darker);
+}
+
+.project2 .read-more:hover {
+  background-color: transparent;
+  color: var(--pink);
+  border: 2.3px solid var(--dark);
 }
 
 .project2 {
-  margin-top: 50px;
+  align-self: flex-start;
+  margin-top: 30px;
   align-items: center;
-  background-color: var(--dark);
+  background-color: var(--darker);
   display: flex;
   flex-direction: row-reverse;
   width: 80%;
   height: 300px;
-  border-radius: 30px;
+  border-radius: 45px;
   position: relative;
 }
 
@@ -270,8 +322,18 @@ nav {
   width: 250px;
   margin: 0px 23px;
   scale: 100%;
-  border-bottom-left-radius: 20px;
+  border-bottom-left-radius: 30px;
   border-bottom-right-radius: 10px;
-  border-top-left-radius: 20px;
+  border-top-left-radius: 30px;
   border-top-right-radius: 10px;
+}
+
+#homepage-footer {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: 55px;
+  background-color: rgb(31, 32, 44);
+  color: rgb(124, 124, 126);
 }
