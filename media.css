@@ -1,8 +1,8 @@
-@media(max-width: 900px){
-  .nav-list{
+@media(max-width: 900px) {
+  .nav-list {
     border: none;
     border-radius: 8px;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: flex-start;
     gap: 1.7rem !important;
@@ -14,38 +14,41 @@
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
     padding: 3rem 3rem;
     background-color: var(--dark);
-    transform: translateX(110%);
-    transition: transform .5s ease;
   }
 
-  .nav-list.active{
+  .nav-list.active {
     display: flex;
     border: none;
-    transform: translateX(0);
   }
 
-  .navbar-toggle{
+  .navbar-toggle {
     position: absolute;
     right: 30px;
     display: block;
     z-index: 999;
   }
-  .navbar-toggle.active{
+
+  .navbar-toggle.active {
     border: none;
   }
+
   .navbar-toggle.active .bar:nth-child(2) {
     opacity: 0;
   }
+
   .navbar-toggle.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
+
   .navbar-toggle.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-  .buttons.active{
+
+  .buttons.active {
     display: none;
   }
-  .btnx{
+
+  .btnx {
     height: 35px;
     width: 90px;
     font-size: 12px;
@@ -53,60 +56,152 @@
     border-radius: 18px;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
   }
-  .intro{
+
+  .intro {
     padding-left: 35px;
     padding-right: 50px;
   }
-  .project1{
+
+  .short-info {
+    margin-top: 10px;
+  }
+
+  .information {
+    font-size: 28px;
+    color: var(--darker);
+    position: relative;
+    display: flex;
+  }
+
+  .project1 {
+    border-radius: 20px;
+    width: 80%;
+    height: 450px;
+    align-self: center;
     flex-direction: column-reverse;
   }
-  .project2{
+
+  .project1 .project-img {
+    height: 200px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0px;
+  }
+
+  .project2 {
+    border-radius: 20px;
+    width: 80%;
+    height: 520px;
+    align-self: center;
     flex-direction: column-reverse;
   }
+
+  .project2 .project-img {
+    height: 200px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+
+  .read-more {
+    margin-top: 0;
+    margin-bottom: 10px;
+    align-self: center;
+  }
+
 }
 
-@media(max-width: 480px){
-  .navbar-toggle{
+@media(max-width: 480px) {
+  .navbar-toggle {
     right: 10px;
   }
+
   #name {
-  padding: 0px 10px;
+    padding: 0px 10px;
   }
+
   .my-name {
-  position: relative;
-  font-weight: 600;
-  font-size: 30px;
+    position: relative;
+    font-weight: 600;
+    font-size: 30px;
   }
-  .nav-list{
+
+  .nav-list {
     top: 53px;
     width: 180px;
     padding: 1rem 1rem;
   }
-  nav{
+
+  nav {
     height: 50px;
   }
-  #nav-image{
-  left: 3px;
-  height: 42px;
-  width: 42px;
+
+  #nav-image {
+    left: 3px;
+    height: 42px;
+    width: 42px;
   }
+
   .image {
-  height: 40px;
-  width: 42px;
+    height: 40px;
+    width: 42px;
   }
-  .greet{
+
+  .greet {
     color: var(--pink);
     font-size: 40px;
-    }
-  .intro{
+  }
+
+  .intro {
     padding-left: 10px;
     padding-right: 10px;
   }
-  .buttons.active{
+
+  .buttons.active {
     display: none;
   }
-  .info{
+
+  .info {
     margin-top: 10px;
     font-size: 15px;
-    }
+  }
+
+  .information {
+    font-size: 22px;
+  }
+
+  .project1,
+  .project2 {
+    margin-top: 50px;
+    border-radius: 20px;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project2 {
+    height: 500px;
+  }
+
+  .project-info {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .project1 .project-text,
+  .project2 .project-text {
+    font-size: 20px;
+  }
+
+  .project-content {
+    margin: 22px;
+  }
+
+  .read-more {
+    align-self: center;
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
 }
