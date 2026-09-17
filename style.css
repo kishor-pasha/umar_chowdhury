@@ -18,7 +18,7 @@ body {
   box-sizing: border-box;
 }
 
-/* Navigation Bar */
+/* --------------------------- Navigation Bar --------------------------- */
 nav {
   display: flex;
   background-color: var(--dark);
@@ -39,7 +39,7 @@ nav {
   top: 0px;
 }
 
-/* Navbar Image */
+/* --------------------------- Navbar Image --------------------------- */
 #nav-image {
   left: 5px;
   position: relative;
@@ -53,7 +53,7 @@ nav {
   width: 50px;
 }
 
-/* Navbar Text */
+/* --------------------------- Navbar Text --------------------------- */
 #name {
   padding: 0px 18px;
   position: relative;
@@ -68,7 +68,7 @@ nav {
   margin: 0px;
 }
 
-/* Navbar Buttons */
+/* --------------------------- Navbar Buttons --------------------------- */
 .nav-list {
   border: none;
   display: flex;
@@ -137,7 +137,12 @@ nav {
   transition: all 0.5s ease-in-out;
 }
 
-/* Body */
+
+/* --------------------------- Home --------------------------- */
+
+
+/* --------------------------- Body --------------------------- */
+
 #homepage {
   background-color: var(--darker);
   width: 100%;
@@ -145,6 +150,8 @@ nav {
   display: flex;
   align-items: center;
 }
+
+/* --------------------------- Other info --------------------------- */
 
 .intro {
   position: relative;
@@ -165,11 +172,13 @@ nav {
 
 .buttons {
   align-items: center;
+  justify-content: center;
   right: 3%;
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
+
 
 .btnx {
   color: var(--darker);
@@ -194,6 +203,7 @@ nav {
   border: 2.3px solid var(--dark);
 }
 
+/* --------------------------- Homepage Cards --------------------------- */
 #sect {
   align-items: center;
   padding: 0px 20px;
@@ -328,12 +338,130 @@ nav {
   border-top-right-radius: 10px;
 }
 
+/* Footer */
+
 #homepage-footer {
   justify-content: center;
   align-items: center;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin-top: 55px;
   background-color: rgb(31, 32, 44);
   color: rgb(124, 124, 126);
 }
+
+.rights {
+  position: relative;
+  height: 30px;
+  width: 100%;
+  border-top: 1px solid rgb(124, 124, 126);
+}
+
+.right-text {
+  font-weight: 400;
+  top: 10%;
+  justify-self: center;
+  position: relative;
+  align-self: center;
+  font-size: 15px;
+}
+
+/* --------------------------- About --------------------------- */
+
+#about-homepage {
+  background-color: var(--darker);
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --------------------------- Profile-pic --------------------------- */
+.profile-picture {
+  display: flex;
+}
+
+.prof-pic {
+  height: 250px;
+  width: 250px;
+  border: 5px solid var(--pink);
+  border-radius: 52px;
+}
+
+/* --------------------------- Body --------------------------- */
+
+.about-button {
+  text-decoration: none;
+  cursor: pointer;
+  background-color: var(--pink);
+  height: 50px;
+  width: 210px;
+  align-items: center;
+  justify-content: center;
+  right: 3%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  transition: all 0.5s ease;
+  border: 2.3px solid var(--pink);
+  border-radius: 25px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.about-btnx {
+  position: relative;
+  color: var(--darker);
+  font-size: 20px;
+  font-family: "Jost";
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+
+.download-img {
+  position: relative;
+  background-image: url("./images/download-darker.svg");
+  fill: none;
+  height: 25px;
+  width: 25px;
+  background-size: cover;
+  transition: all 0.5s ease;
+}
+
+.about-button:hover {
+  border: 2.3px solid var(--dark);
+  background-color: var(--darker);
+}
+
+.about-button:hover .about-btnx {
+  color: var(--pink);
+}
+
+.about-button:hover .download-img {
+  background-image: url("./images/download-pink.svg");
+}
+
+/* --------------------------- About-user --------------------------- */
+
+#about-cards {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+/* .card-setps{
+
+}
+
+.card-info{
+
+}
+
+.card-details{
+
+}
+
+.user-card-info{
+
+} */
